@@ -41,6 +41,19 @@ class PassengerTest {
         assertEquals("Minimum of three characters required", exMessage.getMessage());
         System.out.println(exMessage.getMessage());
     }
+    @Test
+    void testID() {
+        Passenger pass = new Passenger("Mr","Ted","1234567890","1234567",20);
+        assertEquals("1234567890", pass.getId());
+        System.out.println(pass);
+    }
+
+    @Test
+    void testIDFail() {
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Passenger("Mr", "Ted", "123456789", "1234567", 20));
+        assertEquals("Minimum of ten characters required", exMessage.getMessage());
+        System.out.println(exMessage.getMessage());
+    }
 
 
 
