@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PassengerTest {
-    Passenger pass;
 
     @BeforeEach
     void setUp() {
@@ -67,7 +66,19 @@ class PassengerTest {
         assertEquals("Minimum of seven characters required", exMessage.getMessage());
         System.out.println(exMessage.getMessage());
     }
+    @Test
+    void testAge() {
+        Passenger pass = new Passenger("Mr","Ted","1234567890","1234567",20);
+        assertEquals(20, pass.getAge());
+        System.out.println(pass);
+    }
 
+    @Test
+    void testAgeFail() {
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Passenger("Mr", "Ted", "1234567890", "1234567", 15));
+        assertEquals("Must be over 16 to fly", exMessage.getMessage());
+        System.out.println(exMessage.getMessage());
+    }
 
 
     @AfterEach
