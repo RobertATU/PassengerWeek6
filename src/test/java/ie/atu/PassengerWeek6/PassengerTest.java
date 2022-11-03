@@ -28,6 +28,19 @@ class PassengerTest {
         assertEquals("Title must be Mr, Mrs or Ms", exMessage.getMessage());
         System.out.println(exMessage.getMessage());
     }
+    @Test
+    void testName() {
+        Passenger pass = new Passenger("Mr","Ted","1234567890","1234567",20);
+        assertEquals("Ted", pass.getName());
+        System.out.println(pass);
+    }
+
+    @Test
+    void testNameFail() {
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Passenger("Mr", "Te", "1234567890", "1234567", 20));
+        assertEquals("Minimum of three characters required", exMessage.getMessage());
+        System.out.println(exMessage.getMessage());
+    }
 
 
 
