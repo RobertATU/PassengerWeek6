@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.atu.PassengerWeek6.PassengerTest" time="0.437" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.atu.PassengerWeek6.PassengerTest" time="0.351" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IE"/>
     <property name="sun.boot.library.path" value="C:\Users\Robert\.jdks\openjdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Robert\AppData\Local\Temp\surefire13323740332366769298\surefirebooter-20221103230749204_3.jar C:\Users\Robert\AppData\Local\Temp\surefire13323740332366769298 2022-11-03T23-07-47_998-jvmRun1 surefire-20221103230749204_1tmp surefire_0-20221103230749204_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Robert\AppData\Local\Temp\surefire17696962400935981359\surefirebooter-20221103234701228_3.jar C:\Users\Robert\AppData\Local\Temp\surefire17696962400935981359 2022-11-03T23-46-58_817-jvmRun1 surefire-20221103234701228_1tmp surefire_0-20221103234701228_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Robert\OneDrive - Atlantic TU\CICD\PasengerWeek6\target\test-classes;C:\Users\Robert\OneDrive - Atlantic TU\CICD\PasengerWeek6\target\classes;C:\Users\Robert\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Robert\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Robert\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Robert\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Robert\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Robert\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Robert\AppData\Local\Temp\surefire13323740332366769298\surefirebooter-20221103230749204_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Robert\AppData\Local\Temp\surefire17696962400935981359\surefirebooter-20221103234701228_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-39"/>
@@ -57,43 +57,43 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testNameFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.204">
+  <testcase name="testNameFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.192">
     <system-out><![CDATA[Minimum of three characters required
 ]]></system-out>
   </testcase>
-  <testcase name="testTitleFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
+  <testcase name="testTitleFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.012">
     <system-out><![CDATA[Title must be Mr, Mrs or Ms
 ]]></system-out>
   </testcase>
-  <testcase name="testAgeFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.007">
+  <testcase name="testAgeFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
     <system-out><![CDATA[Must be over 16 to fly
 ]]></system-out>
   </testcase>
-  <testcase name="testAge" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.054">
+  <testcase name="testAge" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.046">
     <system-out><![CDATA[Passenger{title='Mr', name='Ted', id=1234567890, phone=1234567, age=20}
 ]]></system-out>
   </testcase>
-  <testcase name="testPhone" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.005">
+  <testcase name="testPhone" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
     <system-out><![CDATA[Passenger{title='Mr', name='Ted', id=1234567890, phone=1234567, age=20}
 ]]></system-out>
   </testcase>
-  <testcase name="testTitle" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.011">
+  <testcase name="testTitle" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
     <system-out><![CDATA[Passenger{title='Mr', name='Ted', id=1234567890, phone=1234567, age=20}
 ]]></system-out>
   </testcase>
-  <testcase name="testName" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.006">
+  <testcase name="testName" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.002">
     <system-out><![CDATA[Passenger{title='Mr', name='Ted', id=1234567890, phone=1234567, age=20}
 ]]></system-out>
   </testcase>
-  <testcase name="testID" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
+  <testcase name="testID" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.004">
     <system-out><![CDATA[Passenger{title='Mr', name='Ted', id=1234567890, phone=1234567, age=20}
 ]]></system-out>
   </testcase>
-  <testcase name="testPhoneFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.004">
+  <testcase name="testPhoneFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
     <system-out><![CDATA[Minimum of seven characters required
 ]]></system-out>
   </testcase>
-  <testcase name="testIDFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0">
+  <testcase name="testIDFail" classname="ie.atu.PassengerWeek6.PassengerTest" time="0.009">
     <system-out><![CDATA[Minimum of ten characters required
 ]]></system-out>
   </testcase>
