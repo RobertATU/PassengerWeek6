@@ -20,6 +20,19 @@ class PassengerTest {
         assertEquals("Mr", pass.getTitle());
         System.out.println(pass);
     }
+    @Test
+    void testTitleMrs() {
+        Passenger pass = new Passenger("Mrs","Ted","1234567890","1234567",20);
+        assertEquals("Mrs", pass.getTitle());
+        System.out.println(pass);
+    }
+    @Test
+    void testTitleMs() {
+        Passenger pass = new Passenger("Ms","Ted","1234567890","1234567",20);
+        assertEquals("Ms", pass.getTitle());
+        System.out.println(pass);
+    }
+
 
     @Test
     void testTitleFail() {
