@@ -14,7 +14,6 @@ public class Passenger {
             throw new IllegalArgumentException("Title must be Mr, Mrs or Ms");
         }
 
-
         if(name.length() >= 3)
         {
             this.name = name;

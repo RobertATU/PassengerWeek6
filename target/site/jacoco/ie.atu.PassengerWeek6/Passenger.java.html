@@ -5,7 +5,7 @@ public class Passenger {
     int age;
 
 <span class="fc" id="L7">    public Passenger(String title, String name, String id, String phone, int age) {</span>
-<span class="pc bpc" id="L8" title="2 of 6 branches missed.">        if(title.equals(&quot;Mr&quot;) || title.equals(&quot;Mrs&quot;) || title.equals(&quot;Ms&quot;))</span>
+<span class="fc bfc" id="L8" title="All 6 branches covered.">        if(title.equals(&quot;Mr&quot;) || title.equals(&quot;Mrs&quot;) || title.equals(&quot;Ms&quot;))</span>
         {
 <span class="fc" id="L10">            this.title = title;</span>
         }
@@ -14,48 +14,47 @@ public class Passenger {
 <span class="fc" id="L14">            throw new IllegalArgumentException(&quot;Title must be Mr, Mrs or Ms&quot;);</span>
         }
 
-
-<span class="fc bfc" id="L18" title="All 2 branches covered.">        if(name.length() &gt;= 3)</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if(name.length() &gt;= 3)</span>
         {
-<span class="fc" id="L20">            this.name = name;</span>
+<span class="fc" id="L19">            this.name = name;</span>
         }
 
         else{
-<span class="fc" id="L24">            throw new IllegalArgumentException(&quot;Minimum of three characters required&quot;);</span>
+<span class="fc" id="L23">            throw new IllegalArgumentException(&quot;Minimum of three characters required&quot;);</span>
         }
 
-<span class="fc bfc" id="L27" title="All 2 branches covered.">        if(id.length() &gt;= 10)</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if(id.length() &gt;= 10)</span>
         {
-<span class="fc" id="L29">            this.id = id;</span>
+<span class="fc" id="L28">            this.id = id;</span>
         }
 
         else{
-<span class="fc" id="L33">            throw new IllegalArgumentException(&quot;Minimum of ten characters required&quot;);</span>
+<span class="fc" id="L32">            throw new IllegalArgumentException(&quot;Minimum of ten characters required&quot;);</span>
         }
 
-<span class="fc bfc" id="L36" title="All 2 branches covered.">        if(phone.length() &gt;= 7)</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if(phone.length() &gt;= 7)</span>
         {
-<span class="fc" id="L38">            this.phone = phone;</span>
+<span class="fc" id="L37">            this.phone = phone;</span>
         }
 
         else{
-<span class="fc" id="L42">            throw new IllegalArgumentException(&quot;Minimum of seven characters required&quot;);</span>
+<span class="fc" id="L41">            throw new IllegalArgumentException(&quot;Minimum of seven characters required&quot;);</span>
         }
 
-<span class="fc bfc" id="L45" title="All 2 branches covered.">        if(age &gt; 16)</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if(age &gt; 16)</span>
         {
-<span class="fc" id="L47">            this.age = age;</span>
+<span class="fc" id="L46">            this.age = age;</span>
         }
 
         else{
-<span class="fc" id="L51">            throw new IllegalArgumentException(&quot;Must be over 16 to fly&quot;);</span>
+<span class="fc" id="L50">            throw new IllegalArgumentException(&quot;Must be over 16 to fly&quot;);</span>
         }
 
-<span class="fc" id="L54">    }</span>
+<span class="fc" id="L53">    }</span>
 
     @Override
     public String toString() {
-<span class="fc" id="L58">        return &quot;Passenger{&quot; +</span>
+<span class="fc" id="L57">        return &quot;Passenger{&quot; +</span>
                 &quot;title='&quot; + title + '\'' +
                 &quot;, name='&quot; + name + '\'' +
                 &quot;, id=&quot; + id +
@@ -65,23 +64,23 @@ public class Passenger {
     }
 
     public String getTitle() {
-<span class="fc" id="L68">        return title;</span>
+<span class="fc" id="L67">        return title;</span>
     }
 
     public String getName() {
-<span class="fc" id="L72">        return name;</span>
+<span class="fc" id="L71">        return name;</span>
     }
 
     public String getId() {
-<span class="fc" id="L76">        return id;</span>
+<span class="fc" id="L75">        return id;</span>
     }
 
     public String getPhone() {
-<span class="fc" id="L80">        return phone;</span>
+<span class="fc" id="L79">        return phone;</span>
     }
 
     public int getAge() {
-<span class="fc" id="L84">        return age;</span>
+<span class="fc" id="L83">        return age;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
